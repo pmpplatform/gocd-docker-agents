@@ -1,0 +1,21 @@
+FROM gocd/gocd-agent-debian-11:v22.1.0
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+USER root
+
+# Base packages
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends \
+  curl \
+  gnupg \
+  ca-certificates
+
+# nodesource PPA
+RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash
+
+# nodejs
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends \
+  nodejs \
+  && rm -rf /var/lib/apt/lists/*

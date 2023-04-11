@@ -1,6 +1,6 @@
 FROM gocd/gocd-agent-debian-11:v23.1.0
 
-ENV MAVEN_VERSION 3.8.6
+ENV MAVEN_VERSION 3.8.8
 ENV DEBIAN_FRONTEND=noninteractive
 
 USER root

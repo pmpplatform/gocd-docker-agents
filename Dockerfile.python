@@ -1,0 +1,17 @@
+FROM gocd/gocd-agent-debian-11:v23.1.0
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+USER root
+
+# Base packages
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends \
+  curl \
+  wget \
+  gnupg \
+  ca-certificates \
+  python3 \
+  python3-pip \
+  python3-venv \
+  make

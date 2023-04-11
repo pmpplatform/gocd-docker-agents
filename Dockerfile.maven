@@ -1,4 +1,4 @@
-FROM gocd/gocd-agent-debian-11:v22.1.0
+FROM gocd/gocd-agent-debian-11:v23.1.0
 
 ENV MAVEN_VERSION 3.8.6
 ENV DEBIAN_FRONTEND=noninteractive

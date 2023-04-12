@@ -24,7 +24,7 @@ RUN wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod
   rm packages-microsoft-prod.deb
 
 # nodesource PPA
-RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash
+RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash -
 
 # SDKs and Runtimes
 RUN apt-get update && \

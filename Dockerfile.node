@@ -12,7 +12,7 @@ RUN apt-get update && \
   ca-certificates
 
 # nodesource PPA
-RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash
+RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash -
 
 # nodejs
 RUN apt-get update && \

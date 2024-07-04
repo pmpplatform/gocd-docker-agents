@@ -23,7 +23,8 @@ RUN apt-get update && \
   apt-get install -y --no-install-recommends \
   php8.2 \
   php8.2-cli \
-  php8.2-common
+  php8.2-common \
+  php8.2-zip
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
